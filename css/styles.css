@@ -132,10 +132,9 @@ ul li a:hover{
     align-items: center;
     gap: 10px;
     justify-content: center;
-    
-
 }
 
+  
 .img-info{
     width: 300px;
     height: 300px;
@@ -158,9 +157,24 @@ ul li a:hover{
 .info-text-1{
     width: 500px;
     height: 300px;
-    margin-top: -3%;
-    /*background-color: rgb(36, 96, 148);*/
+
 }
+
+.info-text-1 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-1 p{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 15px;
+    color: #000000;
+}
+
 .info-2{
     width: 100%;
     height: 400px;
@@ -174,6 +188,21 @@ ul li a:hover{
     width: 500px;
     height: 300px;
     /*background-color: rgb(36, 96, 148);*/
+}
+
+.info-text-2 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-2 p{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 15px;
+    color: #000000;
 }
 .info-3{
     width: 100%;
@@ -190,6 +219,21 @@ ul li a:hover{
     /*background-color: rgb(36, 96, 148);*/
 }
 
+.info-text-3 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-3 p{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 14px;
+    color: #000000;
+}
+
 
 
 
@@ -197,12 +241,23 @@ ul li a:hover{
 /* texto importante */
 
 .important-text{
-    display: flex;
     width: 100%;
-    font-size: 20px;
-    height: 300px;
-    justify-content: center;
 }
+
+.important-text h2{
+    text-align: center;
+    color: #34675c;
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
 
 
 
@@ -210,7 +265,7 @@ ul li a:hover{
 
 .info-proyect{
     width: 100%;
-    height: 550px;
+    height: 700px;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -218,7 +273,7 @@ ul li a:hover{
 
 .container-carts{
     width: 280px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px#cecece;
 }
@@ -257,13 +312,39 @@ ul li a:hover{
     background-size: cover;
 }
 
-.content-carts{
+.info-proyect.content-carts{
     width: 100%;
-    height: 200px;
+    height: 100%;
     /* background-color: rgb(243, 152, 152); */
     border-radius: 10px;
 }
 
+.content-carts h3{
+    color: #84ae21;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+.container-carts p{
+    text-align: center;
+    padding:0;
+}
+.buttons{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.button_aboutus{
+    height: 50px;
+    border-radius: 10px;
+    border: solid #7DA3A1 1px;
+    background: linear-gradient(#7DA3A1,#84ae21);
+    cursor: pointer;
+    
+}
 
 
 /* about us */
@@ -272,6 +353,16 @@ ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-us h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-us p{
+    text-align: center;
 }
 
 .about-us-container-home{
@@ -294,10 +385,29 @@ ul li a:hover{
     height: 250px;
 }
 
+
+.donar-boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.donar-button{
+    height: 50px;
+    border-radius: 10px;
+    border: solid #7DA3A1 1px;
+    background: linear-gradient(#7DA3A1,#84ae21);
+    cursor: pointer;
+    left: 0;
+    right: 0;
+}
+
 .contariner-about-us{
     width: 300px;
     height: 300px;
-    background-color: #84ae21;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #7DA3A1;
+    background: linear-gradient(#7da3a193,#84ae2175);
 }
 
 /* footer */
