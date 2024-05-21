@@ -28,6 +28,7 @@ header{
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    padding: 5px;
 }
 
 #nav-bar img{
@@ -87,11 +88,12 @@ ul li a:hover{
 
 /* container information styles */
 .information-home{
-    width: 25%;
+    width: 28%;
     text-align: center;
     margin-left: 15px;
     box-shadow: 2px 2px 2px 2px #cecece;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .p-description{
@@ -104,6 +106,7 @@ ul li a:hover{
     font-size: 15px;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: underline;
 
 }
 .p-link-home:hover{
@@ -170,7 +173,7 @@ ul li a:hover{
 
 .info-text-1 p{
     font-family: 'Roboto';
-    text-align: center ;
+    text-align: left ;
     font-size: 15px;
     color: #000000;
 }
@@ -200,7 +203,7 @@ ul li a:hover{
 
 .info-text-2 p{
     font-family: 'Roboto';
-    text-align: center ;
+    text-align:right ;
     font-size: 15px;
     color: #000000;
 }
@@ -229,7 +232,7 @@ ul li a:hover{
 
 .info-text-3 p{
     font-family: 'Roboto';
-    text-align: center ;
+    text-align: left ;
     font-size: 14px;
     color: #000000;
 }
@@ -328,7 +331,7 @@ ul li a:hover{
 
 .container-carts p{
     text-align: center;
-    padding:0;
+    padding:5px;
 }
 .buttons{
     width: 100%;
@@ -353,6 +356,7 @@ ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 1500px;
 }
 
 .about-us h3{
@@ -375,13 +379,13 @@ ul li a:hover{
 
 #n1{
     grid-column: 1 / 3;
-    width: 610px;
+    width: 630px;
     height: 250px;
 }
 
 #n6{
     grid-column: 1 / 3;
-    width: 610px;
+    width: 630px;
     height: 250px;
 }
 
@@ -408,6 +412,7 @@ ul li a:hover{
     border-radius: 10px;
     box-shadow: 0 0 4px #7DA3A1;
     background: linear-gradient(#7da3a193,#84ae2175);
+    padding: 10px;
 }
 
 /* footer */
