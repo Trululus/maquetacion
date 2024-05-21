@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap'); /*Lilita One*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap'); /*Anton*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*Roboto*/
 
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /*A just recomendation*/
 }
 /* estilos header */
 header{
@@ -25,6 +28,7 @@ header{
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    padding: 5px;
 }
 
 #nav-bar img{
@@ -84,11 +88,12 @@ ul li a:hover{
 
 /* container information styles */
 .information-home{
-    width: 25%;
+    width: 28%;
     text-align: center;
     margin-left: 15px;
     box-shadow: 2px 2px 2px 2px #cecece;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .p-description{
@@ -101,6 +106,7 @@ ul li a:hover{
     font-size: 15px;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: underline;
 
 }
 .p-link-home:hover{
@@ -129,10 +135,9 @@ ul li a:hover{
     align-items: center;
     gap: 10px;
     justify-content: center;
-    
-
 }
 
+  
 .img-info{
     width: 300px;
     height: 300px;
@@ -155,8 +160,24 @@ ul li a:hover{
 .info-text-1{
     width: 500px;
     height: 300px;
-    /*background-color: rgb(36, 96, 148);*/
+
 }
+
+.info-text-1 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-1 p{
+    font-family: 'Roboto';
+    text-align: left ;
+    font-size: 15px;
+    color: #000000;
+}
+
 .info-2{
     width: 100%;
     height: 400px;
@@ -170,6 +191,21 @@ ul li a:hover{
     width: 500px;
     height: 300px;
     /*background-color: rgb(36, 96, 148);*/
+}
+
+.info-text-2 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-2 p{
+    font-family: 'Roboto';
+    text-align:right ;
+    font-size: 15px;
+    color: #000000;
 }
 .info-3{
     width: 100%;
@@ -186,6 +222,21 @@ ul li a:hover{
     /*background-color: rgb(36, 96, 148);*/
 }
 
+.info-text-3 h4{
+    font-family: 'Roboto';
+    text-align: center ;
+    font-size: 30px;
+    color: #34675c;
+    margin: 0;
+}
+
+.info-text-3 p{
+    font-family: 'Roboto';
+    text-align: left ;
+    font-size: 14px;
+    color: #000000;
+}
+
 
 
 
@@ -194,8 +245,22 @@ ul li a:hover{
 
 .important-text{
     width: 100%;
-    height: 300px;
 }
+
+.important-text h2{
+    text-align: center;
+    color: #34675c;
+    font-weight: 600;
+    font-size: 30px;
+    width: 100%;
+}
+.container-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
 
 
 
@@ -203,7 +268,7 @@ ul li a:hover{
 
 .info-proyect{
     width: 100%;
-    height: 550px;
+    height: 700px;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -211,7 +276,7 @@ ul li a:hover{
 
 .container-carts{
     width: 280px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px#cecece;
 }
@@ -250,13 +315,39 @@ ul li a:hover{
     background-size: cover;
 }
 
-.content-carts{
+.info-proyect.content-carts{
     width: 100%;
-    height: 200px;
+    height: 100%;
     /* background-color: rgb(243, 152, 152); */
     border-radius: 10px;
 }
 
+.content-carts h3{
+    color: #84ae21;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+.container-carts p{
+    text-align: center;
+    padding:5px;
+}
+.buttons{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.button_aboutus{
+    height: 50px;
+    border-radius: 10px;
+    border: solid #7DA3A1 1px;
+    background: linear-gradient(#7DA3A1,#84ae21);
+    cursor: pointer;
+    
+}
 
 
 /* about us */
@@ -265,6 +356,17 @@ ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 1500px;
+}
+
+.about-us h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-us p{
+    text-align: center;
 }
 
 .about-us-container-home{
@@ -277,20 +379,40 @@ ul li a:hover{
 
 #n1{
     grid-column: 1 / 3;
-    width: 610px;
+    width: 630px;
     height: 250px;
 }
 
 #n6{
     grid-column: 1 / 3;
-    width: 610px;
+    width: 630px;
     height: 250px;
+}
+
+
+.donar-boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.donar-button{
+    height: 50px;
+    border-radius: 10px;
+    border: solid #7DA3A1 1px;
+    background: linear-gradient(#7DA3A1,#84ae21);
+    cursor: pointer;
+    left: 0;
+    right: 0;
 }
 
 .contariner-about-us{
     width: 300px;
     height: 300px;
-    background-color: #84ae21;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #7DA3A1;
+    background: linear-gradient(#7da3a193,#84ae2175);
+    padding: 10px;
 }
 
 /* footer */
