@@ -23,7 +23,7 @@ header{
 /* estilos barra de navegacion */
 
 #nav-bar{
-    width: 100%;
+    width: 98%;
     height: 60px;
     display: flex;
     justify-content: space-between ;

@@ -21,7 +21,7 @@ header{
 }
 
 #nav-bar{
-    width: 99%;
+    width: 95%;
     height: 60px;
     display: flex;
     justify-content: space-between ;
@@ -106,8 +106,56 @@ ul li a:hover{
 .wallet{
     width: 50%;
     height: 100%;
-    background: #000000;
+    display: flex;
+    justify-content: center;
 }
+
+
+.form-wallet{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #535353;
+}
+
+
+input, select{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    background: none;
+    border: solid 1px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.button-donacion{
+    width: 25%;
+    height: 40px;
+    background: #84ae21;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all.5s;
+}
+
+.button-donacion:hover{
+    background: #739623;
+    block-size: 50px;
+    transition: all.5s;
+}
+
 
 .api{
     width: 50%;

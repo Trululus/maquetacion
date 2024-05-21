@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TerraCoin</title>
     <link rel="stylesheet" href="/css/proyectos.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -12,9 +13,9 @@
         <nav id="nav-bar">
             <a href="#"><img src="/img/logo.png" alt="" class="logo-home"></a>
             <ul>
-                <li><a href="#nav-bar">Inicio</a></li>
-                <li><a href="#footer">Contacto</a></li>
-                <li><a href="#about-us">¿Quienes Somos?</a></li>
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="/html/index.html">Contacto</a></li>
+                <li><a href="/html/index.html">¿Quienes Somos?</a></li>
                 <li><a href="#">Proyectos</a></li>
             </ul>
             <div class="container-icon-home">
@@ -32,13 +33,24 @@
     <div class="content-money">
         <div class="money">
             <p class="dinero-disponible">$ <span id="current-value">0</span></p>
-            <button onclick="addMoney()">Agregar Dinero</button>
         </div>
     </div>
 
     <section class="wallet-api">
         <div class="wallet">
-            
+            <form id="form-wallet" class="form-wallet">
+                <label for="username">Nombre Completo</label>
+                <input type="text" id="username" required>
+                <label for="donation-amount">Valor de la donación</label>
+                <input type="number" id="donation-amount" required>
+                <label for="payment-method">Método de pago</label>
+                <select id="payment-method" name="select">
+                    <option value="transfer">Transferencia bancaria</option>
+                    <option value="card" selected>Tarjeta Crédito/Débito</option>
+                    <option value="wallet">Wallet</option>
+                </select>
+                <button type="button" onclick="addDonation()" class="button-donacion">Agregar Donación</button>
+            </form>
         </div>
         <div class="api"></div>
     </section>
