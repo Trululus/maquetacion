@@ -57,14 +57,36 @@ btnLogin.addEventListener('click', () =>{
                         alert('Invalid username or password');
                 }
     }
-    // .then(users (u) => {
-    //     if (u.username === loginUsername.value && u.password === loginPassword.value) {
-    //         console.log('Login successful:', user);
-    //         alert('Login successful!');
-    //     } else {
-    //             console.log('Login failed');
-    //             alert('Invalid username or password');
-    //     }
-    // })
 
 });
+
+//Selectores 
+const password = document.querySelector('#passwordLogin');
+const user = document.querySelector('#nameLogin');
+const btnL = document.querySelector('#btnLI'); //Evento del formulario del login
+
+//EVENTOS
+btnL.addEventListener('click', async (event) =>{
+    event.preventDefault();
+    await login()
+})
+
+
+async function login(){
+    const response = await fetch(`${URL}?username=${user.value}`)
+    const data =  await response.json()
+    if (data.length === 0) {
+        alert('USUARIO NO ENCONTRADO');
+        return;
+    }
+
+    if(data[0].password === password.value){
+        localStorage.setItem('users', JSON.stringify(data[0]))
+        window.location.href = 'index.html'
+    } else{
+        alert('PASSWORD INVÁLIDO');
+        return;
+    }
+
+
+}

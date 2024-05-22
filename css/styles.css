@@ -20,47 +20,110 @@ header{
     background-position: center; 
 
 }
-/* estilos barra de navegacion */
+/* estilos barra de navegación */
 
-#nav-bar{
-    width: 98%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 5px;
-}
-
-#nav-bar img{
-    width: 25%;
-    height: 100%;
-    margin-left: 20px;
-
-}
-
-ul{
-    display: flex;
-    gap:  40px;
-    width: 80%;
-    justify-content: end;
-}
-
-ul li{
-    list-style: none;
-    display: flex ;
-    justify-content: center ;
-}
-
-
-ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-ul li a:hover{
+/* Navigation bar styles */
+nav#nav-bar {
+    background-color: #ffffffab;
     color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
 }
 
+nav#nav-bar a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav#nav-bar a:hover {
+    color: #78f06b; 
+}
+
+nav#nav-bar a.logo-home {
+    margin-right: auto;
+}
+
+nav#nav-bar .logo-home {
+    width: 60px; /* Ajusta el tamaño del logo aquí */
+}
+
+nav#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav#nav-bar ul li {
+    margin: 0 10px;
+}
+
+nav#nav-bar .container-icon-home {
+    display: flex;
+    align-items: center;
+}
+
+nav#nav-bar .container-icon-home img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+nav#nav-bar .container-icon-home img:hover {
+    transform: scale(1.1);
+}
+
+/* estilos del título y la información */
+.container-title {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-title .title-home {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.container-title .coin-simbol {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.information-home {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.information-home .p-description {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.information-home .p-link-home {
+    font-size: 1em;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.information-home .p-link-home a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.information-home .p-link-home a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
 /* estilos titulo principal */
 .container-title{
     width: 100%;
@@ -415,45 +478,66 @@ ul li a:hover{
     padding: 10px;
 }
 
-/* footer */
+/* Footer styles */
 
-footer{
+footer {
     width: 100%;
-    height: 200px;
     background-color: #84ae21;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.centrar-social-media{
+.centrar-social-media {
     width: 100%;
-    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center
-
-}
-.social-media{
-    width: 15%;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-footer img{
-    width: 20%;
-    margin-left: 3px;
-}
-
-
-.container-suggestions{
-    width: 100%;
-    height: 100px;
+.social-media {
+    width: 30%;
     display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+.container-suggestions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.input-suggestions{
-    width: 15%;
-    height: 20px;
+.input-suggestions {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-.coment-suggestions{
-    width: 8%;
-    height: 25px;
+.coment-suggestions {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coment-suggestions:hover {
+    background-color: #555;
 }
