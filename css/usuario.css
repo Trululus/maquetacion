@@ -1,0 +1,151 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styles */
+nav#nav-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav#nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav#nav-bar a.logo-home {
+    margin-right: auto;
+}
+
+nav#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav#nav-bar ul li {
+    margin: 0 10px;
+}
+
+nav#nav-bar .container-icon-home {
+    display: flex;
+    align-items: center;
+}
+
+nav#nav-bar .container-icon-home img {
+    width: 30px;
+}
+
+/* Main content styles */
+main .container_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+main .tarjet {
+    flex: 1;
+    padding: 20px;
+}
+
+main .foto {
+    background: url('./img/user-placeholder.png') no-repeat center center;
+    background-size: cover;
+}
+
+main .detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+main .detalles .nombre {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main .detalles .cantidad_donada {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main .detalles .cantidad_donada button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main .detalles .cantidad_donada button:hover {
+    background-color: #45a049;
+}
+
+/* Logros (achievements) section styles */
+main .container_logros {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main .logros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .minitarjet {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(60% - 20px);
+    text-align: center;
+}
+
+main .alta {
+    height: 100px;
+    background-color: #eee;
+}
+
+main .alta.uno {
+    background-color: #4CAF50;
+    
+}
+
+main .alta.dos {
+    background-color: #2196F3;
+}
+
+main .alta.tres {
+    background-color: #FFC107;
+}
+
+main .alta.cuatro {
+    background-color: #F44336;
+}
+
+main .baja {
+    padding: 10px;
+    font-size: 16px;
+}
