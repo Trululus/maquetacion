@@ -35,6 +35,7 @@ nav#nav-bar {
     top: 0;
     z-index: 1000;
     height: 50px;
+    border-bottom: solid #4CAF50;
 }
 
 nav#nav-bar a {
@@ -82,10 +83,6 @@ nav#nav-bar .container-icon-home img:hover {
 }
 
 /* estilos del título y la información */
-.container-title {
-    padding: 50px 20px;
-    text-align: center;
-}
 
 .container-title .title-home {
     font-size: 2.5em;
@@ -486,7 +483,7 @@ nav#nav-bar .container-icon-home img:hover {
 
 footer {
     width: 100%;
-    background-color: #84ae21;
+    background-color: #4CAF50;
     padding: 20px 0;
     color: #fff;
     text-align: center;

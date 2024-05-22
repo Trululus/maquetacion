@@ -295,17 +295,16 @@ label{
 .button-donacion{
     width: 25%;
     height: 40px;
-    background: #84ae21;
+    background: #4CAF50;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
-    transition: all.5s;
+   border-radius: 10px;
+   transition: transform 0.3s ease;
 }
 
 .button-donacion:hover{
-    background: #739623;
-    block-size: 50px;
-    transition: all.5s;
+    background: #448c46;
+    transform: scale(1.2);
 }
 
 
