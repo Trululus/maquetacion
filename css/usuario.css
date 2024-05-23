@@ -47,105 +47,137 @@ nav#nav-bar .container-icon-home img {
 }
 
 /* Main content styles */
-main .container_principal {
+.container_principal, .container_logros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.tarjet {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.foto {
+    width: 150px;
+    height: 150px;
+    background-image: url(/img/usuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.detalles {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.nombre {
+    font-size: 24px;
+    font-weight: bold;
+}
+.cantidad_donada {
+    margin-top: 10px;
+}
+.cantidad_donada p {
+    display: inline;
+    font-size: 18px;
+}
+.cantidad_donada button {
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logros {
+    display: flex;
+    flex-wrap: wrap;
+}
+.minitarjet {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.alta {
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 8px;
+}
+.baja {
+    margin-top: 10px;
+}
+
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.centrar-social-media {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a i{
+    width: 60px;
+    height: 60px;
+    padding-top: 50%;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+}
+
+.container-suggestions {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
-main .tarjet {
-    flex: 1;
-    padding: 20px;
+.input-suggestions {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-main .foto {
-    background: url('./img/user-placeholder.png') no-repeat center center;
-    background-size: cover;
-}
-
-main .detalles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-main .detalles .nombre {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-main .detalles .cantidad_donada {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-main .detalles .cantidad_donada button {
-    background-color: #4CAF50;
+.coment-suggestions {
+    padding: 10px 20px;
+    background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-main .detalles .cantidad_donada button:hover {
-    background-color: #45a049;
+.coment-suggestions:hover {
+    background-color: #555;
 }
 
-/* Logros (achievements) section styles */
-main .container_logros {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-main .logros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-main .minitarjet {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(60% - 20px);
-    text-align: center;
-}
-
-main .alta {
-    height: 100px;
-    background-color: #eee;
-}
-
-main .alta.uno {
-    background-color: #4CAF50;
-    
-}
-
-main .alta.dos {
-    background-color: #2196F3;
-}
-
-main .alta.tres {
-    background-color: #FFC107;
-}
-
-main .alta.cuatro {
-    background-color: #F44336;
-}
-
-main .baja {
-    padding: 10px;
-    font-size: 16px;
-}

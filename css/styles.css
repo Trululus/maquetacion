@@ -12,13 +12,13 @@ body{
 /* estilos header */
 header{
     width: 100%;
-    height: 500px;
+    height: 600px;
     border-radius:  0 0 20px 20px;
     box-shadow:  0 2px 2px 2px  #cecece;
-    background-image: url(/img/TERRA\ \(2\).png);
+    background-image: url(/img/fondo-header.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
+
+
 
 }
 /* estilos barra de navegación */
@@ -46,7 +46,7 @@ nav#nav-bar a {
 }
 
 nav#nav-bar a:hover {
-    color: #78f06b; 
+    text-decoration: underline #34675c;
 }
 
 nav#nav-bar a.logo-home {
@@ -54,7 +54,7 @@ nav#nav-bar a.logo-home {
 }
 
 nav#nav-bar .logo-home {
-    width: 60px; /* Ajusta el tamaño del logo aquí */
+    width: 60px; 
 }
 
 nav#nav-bar ul {
@@ -82,46 +82,7 @@ nav#nav-bar .container-icon-home img:hover {
     transform: scale(1.1);
 }
 
-/* estilos del título y la información */
 
-.container-title .title-home {
-    font-size: 2.5em;
-    margin: 0;
-    color: #333;
-}
-
-.container-title .coin-simbol {
-    width: 50px;
-    margin-top: 20px;
-}
-
-.information-home {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.information-home .p-description {
-    font-size: 1.2em;
-    color: #555;
-    margin: 10px 0;
-}
-
-.information-home .p-link-home {
-    font-size: 1em;
-    color: #007BFF;
-    margin: 10px 0;
-}
-
-.information-home .p-link-home a {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s ease;
-}
-
-.information-home .p-link-home a:hover {
-    color: #0056b3; /* Color más oscuro al pasar el ratón */
-}
 /* estilos titulo principal */
 .container-title{
     width: 100%;
@@ -391,9 +352,10 @@ nav#nav-bar .container-icon-home img:hover {
     margin: 0;
 }
 
-.container-carts p{
+.container-carts p {
     text-align: center;
     padding:5px;
+    
 }
 .buttons{
     width: 100%;
@@ -412,6 +374,11 @@ nav#nav-bar .container-icon-home img:hover {
     
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /* about us */
 .about-us{
@@ -426,10 +393,12 @@ nav#nav-bar .container-icon-home img:hover {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .about-us p{
     text-align: center;
+    text-decoration: none;
 }
 
 .about-us-container-home{
@@ -504,13 +473,15 @@ footer {
     justify-content: space-around;
 }
 
-footer img {
-    width: 30px;
-    margin: 0 10px;
+a i{
+    width: 60px;
+    height: 60px;
+    padding-top: 50%;
+    color: #fff;
     transition: transform 0.3s ease;
 }
 
-footer img:hover {
+footer i:hover {
     transform: scale(1.2);
 }
 
