@@ -3,8 +3,10 @@
     padding: 0;
 }
 body{
-    padding: 0;
-    margin: 0;
+
+   padding: 0;
+   margin: 0;
+   background-color: #f4f4f4;
 }
 
 /* estilos header */
@@ -13,10 +15,8 @@ header{
     height: 500px;
     border-radius:  0 0 20px 20px;
     box-shadow:  0 2px 2px 2px  #cecece;
-    background-image: url(/img/tierra-manos.jpeg);
+    background-image: url(/img/fondo-header.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
 
 }
 
@@ -36,16 +36,9 @@ nav#nav-bar {
    height: 50px;
 }
 
-nav#nav-bar a {
-   color: #000000;
-   text-decoration: none;
-   margin-right: 20px;
-   transition: color 0.3s ease;
-}
 
-nav#nav-bar a:hover {
-   color: #78f06b; 
-}
+
+
 
 nav#nav-bar a.logo-home {
    margin-right: auto;
@@ -231,9 +224,10 @@ nav#nav-bar .container-icon-home img:hover {
 .money{
     width: 500px;
     height: 200px;
-    background: #cecece;
+    background: #ffffff;
     border-radius: 10px;
     margin-top: 40px;
+   box-shadow: 0 0 7px  #919191;
 }
 
 .dinero-disponible{
@@ -273,7 +267,7 @@ nav#nav-bar .container-icon-home img:hover {
 }
 
 
-input, select{
+.wallet input, select{
     width: 80%;
     height: 30px;
     border-radius: 10px;
@@ -293,17 +287,16 @@ label{
 .button-donacion{
     width: 25%;
     height: 40px;
-    background: #84ae21;
+    background: #4CAF50;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
-    transition: all.5s;
+   border-radius: 10px;
+   transition: transform 0.3s ease;
 }
 
 .button-donacion:hover{
-    background: #739623;
-    block-size: 50px;
-    transition: all.5s;
+    background: #448c46;
+    transform: scale(1.2);
 }
 
 
@@ -342,15 +335,6 @@ footer {
    justify-content: space-around;
 }
 
-footer img {
-   width: 30px;
-   margin: 0 10px;
-   transition: transform 0.3s ease;
-}
-
-footer img:hover {
-   transform: scale(1.2);
-}
 
 .container-suggestions {
    width: 100%;
@@ -359,14 +343,14 @@ footer img:hover {
    align-items: center;
 }
 
-.input-suggestions {
+footer #suggestion {
    width: 200px;
-   height: 20px;
-   padding: 10px;
+   padding: 3px;
    border: none;
-   background: #ffff;
    border-radius: 5px;
    margin-right: 10px;
+   background: #b76f6f;
+   margin-top: 10px;
 }
 
 .coment-suggestions {
@@ -381,4 +365,16 @@ footer img:hover {
 
 .coment-suggestions:hover {
    background-color: #555;
+}
+
+a i{
+   width: 60px;
+   height: 60px;
+   padding-top: 50%;
+   color: #fff;
+   transition: transform 0.3s ease;
+}
+
+footer i:hover {
+   transform: scale(1.2);
 }

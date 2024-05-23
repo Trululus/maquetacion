@@ -23,8 +23,12 @@ btn.addEventListener('click', async function(event) {
     const userData = {
         username: userName.value,
         email: userEmail.value,
-        password: userPassword.value
+        password: userPassword.value,
+        recaudo: 0
     };
+
+    localStorage.setItem('users', JSON.stringify(userData))
+
 
     await fetch(URL, {
         method: 'POST',
@@ -39,26 +43,7 @@ btn.addEventListener('click', async function(event) {
     userPassword.textContent = " ";
 });
 
-// Manejar el formulario de inicio de sesión
-const btnLogin = document.querySelector("#btnLI");
-const loginUsername = document.querySelector("#login-username");
-const loginPassword = document.querySelector("#login-password");
-
-btnLogin.addEventListener('click', () =>{
-
-    fetch(URL)
-    .then(response => response.json())
-    function login (u){
-        if (u.username === loginUsername.value && u.password === loginPassword.value) {
-            console.log('Login successful:', user);
-            alert('Login successful!');
-        }else {
-                        console.log('Login failed');
-                        alert('Invalid username or password');
-                }
-    }
-
-});
+// // Manejar el formulario de inicio de sesión
 
 //Selectores 
 const password = document.querySelector('#passwordLogin');
@@ -82,7 +67,7 @@ async function login(){
 
     if(data[0].password === password.value){
         localStorage.setItem('users', JSON.stringify(data[0]))
-        window.location.href = 'index.html'
+        window.location.href = 'usuario.html'
     } else{
         alert('PASSWORD INVÁLIDO');
         return;
@@ -90,3 +75,4 @@ async function login(){
 
 
 }
+

@@ -19,7 +19,7 @@ body{
     position: relative;
     width: 750px;
     height: 450px;
-    background: #87A943;
+    background: #34675c;
     border: 2px solid #DDE8EE;
     box-shadow: 0 0 25px #86A2A9;
     overflow: hidden;
@@ -124,7 +124,7 @@ body{
     left: 0;
     transform: translateY(-50%);
     font-size: 16px;
-    color: #fff;
+    color: #a7a7a7;
     pointer-events: none;
     transition: .5s;
 }
@@ -132,7 +132,7 @@ body{
 .input-box input:focus~label,
 .input-box input:valid~label{
     top: -5px;
-    color: #86A2A9;
+    color: #ffffff;
 }
 
 
@@ -142,13 +142,13 @@ body{
     right: 0;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #fff;
+    color: #a7a7a7;
     transition: .5s;
 }
 
 .input-box input:focus~i,
 .input-box input:valid~i{
-    color: #86A2A9;
+    color: #fff;
 }
 
 .btn{
@@ -192,13 +192,14 @@ body{
 }
 
 .logreg-link p a{
-    color: #2F5635;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .logreg-link p a:hover{
-    text-decoration: underline;
+    text-decoration: underline #a7a7a7;
 }
 
 .wrapper .info-text{
@@ -279,7 +280,7 @@ body{
     right: 0;
     width: 850px;
     height: 600px;
-    background: linear-gradient(45deg,#87A943,#86A2A9);
+    background: linear-gradient(45deg,#34675c,#e0ffa1);
     border-bottom: 3px solid #DDE8EE;
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
@@ -299,7 +300,7 @@ body{
     left: 250px;
     width: 850px;
     height: 700px;
-    background: #87A943;
+    background: #34675c;
     border-top: 3px solid #DDE8EE;
     transform: rotate(0) skewY(0);
     transform-origin: bottom left;
@@ -309,6 +310,6 @@ body{
 
 .wrapper.active .bg-animate2{
     transform: rotate(-11deg) skewY(-41deg);
-    background: #87A943;
+    background: #34675c;
     transition-delay: 1.2s;
 }
